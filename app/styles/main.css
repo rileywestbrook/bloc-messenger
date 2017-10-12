@@ -1,0 +1,30 @@
+html, body {
+  margin:0 !important;
+  padding:0 !important;
+  height:100%;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fffaf0;
+}
+
+h1 {
+  color: #1e2023;
+  font-size: 250%%;
+}
+
+h2 {
+  font-size: 125%;
+  color: #494c51;
+  font-weight: 100;
+}
+
+.sidenav {
+  height: 100%;
+  width: 20%;
+  background-color: #8198c6;
+  margin-top: 0;
+  float: left;
+}
+
+.sidenav .sidenav-content {
+  padding: 10% 0% 0% 10%;
+}
