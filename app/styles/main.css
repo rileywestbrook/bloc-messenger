@@ -1,6 +1,6 @@
 html, body {
-  margin:0 !important;
-  padding:0 !important;
+  margin:0;
+  padding:0;
   height:100%;
   font-family: 'Open Sans', sans-serif;
   background-color: #fffaf0;
@@ -8,23 +8,55 @@ html, body {
 
 h1 {
   color: #1e2023;
-  font-size: 250%%;
+  font-size: 40px;
 }
 
 h2 {
-  font-size: 125%;
+  font-size: 20px;
   color: #494c51;
   font-weight: 100;
 }
 
+#page-title {
+  display: block;
+  float: left
+}
+
 .sidenav {
   height: 100%;
-  width: 20%;
+  width: 400px;
   background-color: #8198c6;
-  margin-top: 0;
-  float: left;
+  top: 0;
+  left: 0;
+  position: fixed;
 }
 
 .sidenav .sidenav-content {
-  padding: 10% 0% 0% 10%;
+  padding: 40px 0px 0px 30px;
+}
+
+.sidenav .sidenav-content .create-room-button {
+  border: none;
+  background-color: #fffaf0;
+  font-size: 18px;
+  cursor: pointer;
+  width: 110px;
+  height: 35px;
+  display: block;
+  margin: 35px 0px 0px 45px;
+  float: left;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
 }

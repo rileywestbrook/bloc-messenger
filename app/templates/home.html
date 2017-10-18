@@ -1,6 +1,8 @@
 <div class="sidenav">
   <section class="sidenav-content">
-    <h1>Bloc Chat</h1>
-    <h2 ng-repeat="room in home.rooms">{{ room.$value }}</h2>
+    <h1 id="page-title">Bloc Chat</h1>
+    <button class="create-room-button" type="button" ng-click="home.addRoom()">New Room</button>
+    <div class="cf"></div>
+    <h2 ng-repeat="room in home.rooms">{{ room.name }}</h2>
   </section>
 </div>
