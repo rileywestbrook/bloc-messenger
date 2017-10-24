@@ -7,11 +7,12 @@
   </section>
 </div>
 
-<div>
-  <h3 style="text-align:center;">{{ home.currentRoom.name }}</h3>
-  <div ng-repeat="message in home.messages">
-    <div>{{ message.username }}</div>
-    <div>{{ message.sentAt }}</div>
-    <div>{{ message.content }}</div>
+<div message-view>
+  <h3 class="room-header">{{ home.currentRoom.name }}</h3>
+  <div class="ind-message" ng-repeat="message in home.messages">
+    <div class="username">{{ message.username }}</div>
+    <div class="sent-time">{{ message.sentAt }}</div>
+    <div class="cf"></div>
+    <div class="message-content">{{ message.content }}</div>
   </div>
 </div>
