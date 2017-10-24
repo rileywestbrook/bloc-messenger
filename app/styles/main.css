@@ -17,6 +17,20 @@ h2 {
   font-weight: 100;
 }
 
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
 #page-title {
   display: block;
   float: left
@@ -47,29 +61,20 @@ h2 {
   float: left;
 }
 
-.cf:before,
-.cf:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
+.sidenav .sidenav-content .room-name {
+  cursor: pointer;
 }
-
-.cf:after {
-  clear: both;
-}
-
-.cf {
-  *zoom: 1;
-}
-
 
 .room-header {
-  margin: 80px 0px 60px 450px;
+  margin: 80px 0px 30px 450px;
   font-size: 26px;
   font-weight: 900;
 }
 
 .ind-message {
-  display: inline;
+  display: block;
+  height: 100px;
+  padding-top: 20px;
 }
 
 .ind-message .username {
@@ -78,16 +83,25 @@ h2 {
   font-weight: 600px;
   font-size: 20px;
   margin-bottom: 5px;
-  letter-spacing: 0.1rem
+  letter-spacing: 1.5px;
 }
 
 .ind-message .message-content {
   margin: 0px 0px 20px 450px;
+  #494c51
 }
 
 .sent-time {
   text-align: right;
-  margin: 17px 40px 0px 0px;
+  margin: 17px 50px 0px 0px;
   float: right;
   font-style: italic;
+}
+
+.odd {
+  background-color: #ffffff;
+}
+
+.even {
+  background-color: #fffaf0;
 }
