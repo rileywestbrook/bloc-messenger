@@ -81,14 +81,15 @@ h2 {
   margin-left: 450px;
   float: left;
   font-weight: 600px;
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 18px;
+  margin-bottom: 2px;
   letter-spacing: 1.5px;
 }
 
 .ind-message .message-content {
   margin: 0px 0px 20px 450px;
-  #494c51
+  color: #494c51;
+  font-size: 16px;
 }
 
 .sent-time {
@@ -104,4 +105,19 @@ h2 {
 
 .even {
   background-color: #fffaf0;
+}
+
+.message-field {
+  position: fixed;
+  bottom: 0;
+  margin: 0px 0px 0px 400px;
+}
+
+.message-boxi {
+  height: 60px;
+  width: 1000px;
+}
+
+.btn-new-message {
+  height: 60px;
 }
